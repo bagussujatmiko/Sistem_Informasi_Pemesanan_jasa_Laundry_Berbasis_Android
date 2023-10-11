@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="17dp">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_idtransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/tv_nm_pelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_idtransaksi"
+            android:text="Nama pelanggan"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_no_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@id/tv_tanggal"
+            android:text="nomor whatsapp"
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_no_whatsapp"
+            android:text="alamat"
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kembalian"
+            android:text="tanggal"
+            android:textSize="21sp"/>
+        <TextView
+            android:id="@+id/tv_nm_layanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bayar"
+            android:text="nama layanan"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_harga_jasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="harga layanan"
+            android:textSize="21sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_berat"
+            android:layout_below="@id/tv_nm_layanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="berat"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/tv62"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_nm_pelanggan"
+            android:layout_height="wrap_content"
+            android:text="+62"
+            android:textSize="21sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_biaya_layanan"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_nm_pelanggan"
+            android:layout_toRightOf="@id/tv62"
+            android:layout_height="wrap_content"
+            android:text="biaya layanan"
+            android:textSize="21sp"
+            />
+        <TextView
+            android:id="@+id/tv_bayar"
+           android:layout_below="@id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_alamat"
+            android:text="bayar"
+            android:textSize="21sp"/>
+        <TextView
+            android:id="@+id/tv_kembalian"
+            android:layout_below="@id/tv_biaya_layanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kembalian"
+            android:textSize="21sp"
+
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

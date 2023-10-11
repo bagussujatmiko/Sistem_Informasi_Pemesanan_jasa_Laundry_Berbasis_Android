@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="16dp"
+    tools:context=".Ubah_Transaksi_Laundry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_judulTransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="12dp"
+            android:text="Ubah Data Transaksi Laundry"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mm_namapelanggan"
+            android:layout_below="@+id/tv_judulTransaksi">
+
+
+
+            <EditText
+                android:id="@+id/et_nama_Pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@color/white"
+                android:hint="Nama Pelanggan"
+                android:inputType="text"
+                android:layout_below="@id/tv_judulTransaksi"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_namapelanggan"
+            android:id="@+id/mm_telepon">
+
+
+            <EditText
+                android:id="@+id/et_nowhatsapp"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/white"
+                android:hint=" +62 No whatsapp"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mm_alamatPelanggan"
+            android:layout_below="@+id/mm_telepon">
+
+
+            <EditText
+                android:id="@+id/et_nmAlamatPelanggan"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/white"
+                android:hint="Alamat Pelanggan"
+                android:inputType="text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mm_tanggalpesan"
+            android:layout_below="@+id/mm_alamatPelanggan">
+
+
+            <EditText
+                android:id="@+id/et_tanggalpesan"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/white"
+                android:hint="Tanggal order"
+                android:inputType="text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mm_layanan"
+            android:layout_below="@+id/mm_tanggalpesan">
+
+            <EditText
+                android:id="@+id/et_nmlayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@color/white"
+                android:hint="Nama layanan"
+                android:inputType="text"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_layanan"
+            android:id="@+id/mm_harga">
+
+            <EditText
+                android:id="@+id/et_harga_layanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="harga layanan"
+                android:background="@color/white"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_harga"
+            android:id="@+id/mm_berat">
+
+            <EditText
+                android:id="@+id/et_berat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="berat pakaian"
+                android:background="@color/white"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_berat"
+            android:id="@+id/mm_biaya">
+
+            <EditText
+                android:id="@+id/et_biaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="biaya layanan"
+                android:background="@color/white"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_biaya"
+            android:id="@+id/mm_bayar">
+
+            <EditText
+                android:id="@+id/et_bayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="bayar layanan"
+                android:background="@color/white"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mm_bayar"
+            android:id="@+id/mm_kembalian">
+
+            <EditText
+                android:id="@+id/et_kembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint=" kembalian"
+                android:background="@color/white"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_ubahtransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ubah Transaksi "
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/mm_kembalian"/>
+    </RelativeLayout>
+
+
+</ScrollView>

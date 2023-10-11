@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:text="INPUT DATA"/>
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/logo1" />
+
+        </RelativeLayout>
+
+
+
+        <androidx.gridlayout.widget.GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="96dp"
+            app:columnCount="2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:rowCount="2"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_pelanggan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_pelanggan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_pelanggan" />
+
+                    <TextView
+                        android:id="@+id/txt_pelanggan_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="data pelanggan"
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/img_pelanggan"
+                        app:layout_constraintStart_toStartOf="@id/img_pelanggan"
+                        app:layout_constraintTop_toBottomOf="@id/img_pelanggan" />
+
+                    <TextView
+                        android:id="@+id/txt_pelanggan_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/garis_pelanggan"
+                        app:layout_constraintStart_toStartOf="@id/garis_pelanggan"
+                        app:layout_constraintTop_toBottomOf="@id/garis_pelanggan" />
+
+                    <View
+                        android:id="@+id/garis_pelanggan"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#a9a9a9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_pelanggan_header" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardpengeluaran"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_kategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_kategori" />
+
+                    <TextView
+                        android:id="@+id/txt_kategori_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="pengeluaran"
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/img_kategori"
+                        app:layout_constraintStart_toStartOf="@id/img_kategori"
+                        app:layout_constraintTop_toBottomOf="@id/img_kategori" />
+
+                    <TextView
+                        android:id="@+id/txt_kategori_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="menginput pengeluaran"
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/garis_kategori"
+                        app:layout_constraintStart_toStartOf="@id/garis_kategori"
+                        app:layout_constraintTop_toBottomOf="@id/garis_kategori" />
+
+                    <View
+                        android:id="@+id/garis_kategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#a9a9a9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_kategori_header" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardjasa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_jasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_jasa" />
+
+                    <TextView
+                        android:id="@+id/txt_jasa_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="jasa"
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/img_jasa"
+                        app:layout_constraintStart_toStartOf="@id/img_jasa"
+                        app:layout_constraintTop_toBottomOf="@id/img_jasa" />
+
+                    <TextView
+                        android:id="@+id/txt_jasa_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="menginput jasa"
+                        android:textColor="#484848"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/garis_jasa"
+                        app:layout_constraintStart_toStartOf="@id/garis_jasa"
+                        app:layout_constraintTop_toBottomOf="@id/garis_jasa" />
+
+                    <View
+                        android:id="@+id/garis_jasa"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#a9a9a9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_jasa_header" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+</ScrollView>

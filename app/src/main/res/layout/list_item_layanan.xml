@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:id="@+id/ll_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_idlayanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_namalayanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama layanan"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_satuanjasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="satuan jasa"
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/tv_hargajasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="harga jasa"
+            android:textSize="21sp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
